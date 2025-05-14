@@ -79,6 +79,7 @@ Visit: http://localhost:3000
 ```
 
 ## 💡 Features
+
 🔐 User Authentication (Sign Up & Login)
 
 📰 View all blog posts (publicly accessible)
@@ -89,7 +90,9 @@ Visit: http://localhost:3000
 
 ✅ Input validation & error handling
 
-🗂️ Folder Structure
+
+## 🗂️ Folder Structure
+
 pgsql
 Copy
 Edit
@@ -110,44 +113,25 @@ Edit
 ├── .env
 ├── package.json
 └── README.md
-📜 Scripts
+
+
+## 📜 Scripts
 npm run dev
 Runs the app in development mode.
-Visit: http://localhost:5173
+Visit: http://localhost:3000
 
 npm run build
 Builds the app for production in dist/ folder.
 
-⚠️ Notes
+## ⚠️ Notes
+
 Only authenticated users can access the /new route.
 
 Supabase handles both the authentication and the database.
 
 If user is not logged in, they will be redirected to login before creating a post.
 
-🌐 Deployment
-You can deploy the app using:
 
-Vercel: https://vercel.com
+## 🌐 Deployment
 
 Netlify: https://netlify.com
-
-Set environment variables (VITE_SUPABASE_URL, VITE_SUPABASE_ANON_KEY) in the hosting dashboard.
-
-📎 Useful Links
-React Docs
-
-Supabase Docs
-
-Vite Docs
-
-📜 License
-MIT © [Your Name]
-
-yaml
-Copy
-Edit
-
----
-
-You can copy and paste this directly into your `README.md` file. Let me know if you want to add a li
