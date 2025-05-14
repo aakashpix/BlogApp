@@ -1,15 +1,15 @@
 # 📝 Simple Blog App
 
-A full-stack blog application where users can **sign up, log in**, view public blog posts, and **create new posts**. Built using **React**, **Supabase** (for Auth & DB), and styled using **CSS** or **Tailwind CSS**.
+A full-stack blog application where users can **sign up, log in**, view public blog posts, and **create new posts**. Built using **React**, **Supabase** (for Auth & DB), and styled using **CSS** and **Tailwind CSS**.
 
 ---
 
 ## 🔧 Tech Stack
 
 - **Frontend**: React, React Router
-- **Backend**: Supabase (Auth + PostgreSQL)
-- **Styling**: CSS / Tailwind CSS
-- **Hosting**: Vercel / Netlify
+- **Backend**: Supabase (Auth + Posting data)
+- **Styling**: CSS + Tailwind CSS
+- **Hosting**: Netlify
 
 ---
 
@@ -32,11 +32,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ```bash
 git clone https://github.com/your-username/blog-app.git
 cd blog-app
+
+
 2. Install Dependencies
 bash
 Copy
 Edit
 npm install
+
+
 3. Set up Supabase
 Create a new project at Supabase.io
 
@@ -51,6 +55,7 @@ content	Text
 created_at	Timestamp
 author_email	Text
 
+
 4. Configure Environment Variables
 Create a .env file at the root:
 
@@ -59,14 +64,21 @@ Copy
 Edit
 VITE_SUPABASE_URL=https://your-project.supabase.co
 VITE_SUPABASE_ANON_KEY=your-anon-key
+
+
 5. Run the App
 bash
 Copy
 Edit
 npm run dev
-Visit: http://localhost:5173
+Visit: http://localhost:3000
 
-💡 Features
+
+
+
+```
+
+## 💡 Features
 🔐 User Authentication (Sign Up & Login)
 
 📰 View all blog posts (publicly accessible)
