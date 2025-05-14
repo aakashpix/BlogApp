@@ -14,19 +14,20 @@ const Login = () => {
     setError(null);
 
     try {
-      let data, error;
+      let error;
 
-      if (isSignUp) {
-        ({ data, error } = await supabase.auth.signUp({
-          email,
-          password,
-        }));
-      } else {
-        ({ data, error } = await supabase.auth.signInWithPassword({
-          email,
-          password,
-        }));
-      }
+if (isSignUp) {
+  ({ error } = await supabase.auth.signUp({
+    email,
+    password,
+  }));
+} else {
+  ({ error } = await supabase.auth.signInWithPassword({
+    email,
+    password,
+  }));
+}
+
 
       if (error) {
         setError(error.message);

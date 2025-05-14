@@ -91,45 +91,21 @@ Visit: http://localhost:3000
 ✅ Input validation & error handling
 
 
-## 🗂️ Folder Structure
-
-pgsql
-Copy
-Edit
-├── public/
-├── src/
-│   ├── components/
-│   │   ├── Navbar.jsx
-│   │   └── PostCard.jsx
-│   ├── pages/
-│   │   ├── Home.jsx
-│   │   ├── Login.jsx
-│   │   └── NewPost.jsx
-│   ├── utils/
-│   │   └── supabaseClient.js
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-├── .env
-├── package.json
-└── README.md
-
-
 ## 📜 Scripts
-npm run dev
-Runs the app in development mode.
-Visit: http://localhost:3000
+- npm run dev
+- Runs the app in development mode. 
+- Visit: http://localhost:3000
 
-npm run build
-Builds the app for production in dist/ folder.
+- npm run build
+- Builds the app for production in dist/ folder.
 
 ## ⚠️ Notes
 
-Only authenticated users can access the /new route.
+- Only authenticated users can access the /new route.
 
-Supabase handles both the authentication and the database.
+- Supabase handles both the authentication and the database.
 
-If user is not logged in, they will be redirected to login before creating a post.
+- If user is not logged in, they will be redirected to login before creating a post.
 
 
 ## 🌐 Deployment
